@@ -1,6 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.container{
+  max-width:80vw;
+  margin:40px auto;
+}
+
+/*------- utility classes -------*/
+.img-right{
+  float:right;
+  margin:10px 0 10px 20px;
+  border:1px solid #c0c0c0;
+  padding:1px;
+  background-color:red;
+}
+
+.img-left{
+  float:left;
+  margin:10px 0 10px 20px;
+  border:1px solid #c0c0c0;
+  padding:1px;
+}
+
+.img-center{
+  display:block;
+  margin:20px auto;
+  border:1px solid #c0c0c0;
+  padding:1px;
+}
+
 /*
 ------ Style sheet for css-demo ------
 */
+
+
 header.primary{
     background-color:#3b638b;
 color:#ffffff;
@@ -69,6 +107,8 @@ header.primary h1 {
 body{
     background-color: rgb(213, 213, 213);
     font-family: 'Young Serif', serif;
+    background-image:url("../img/gordo.jpeg");
+    background-repeat:no-repeat;
 }
 
 
@@ -79,27 +119,105 @@ border: bottom 100px grooved #d30c0c;
 
 }
 
-#content{
-    display:flex;
-    flex-direction:row;
-    gap:20px;
-}
 
 #content .post{
-box-shadow: 0 4px 8px rgba
-(0,0,0,.4);
-padding:10px;
-border-radius:4px;
-font-size:.8rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+  padding:10px;
+  border-radius:4px;
+  font-size:.8rem;
+  transition: 0.5s;
 }
 
+#content article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
 
 article.post figure{
     margin:0px;
 }
+#content article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+article.post figure{
+  margin:0;
+}
+
+article.post time.post-date, article.post figcaption,
+article.post .post-meta
+{
+  text-transform:uppercase;
+  color:#c0c0c0;
+}
+
+article.post a{
+  color: #3b638b;
+}
+
+article.post a:hover{
+  text-decoration:none;
+}
+article.post img{
+  border:1px solid #c0c0c0;
+  padding:2px;
+  margin:10px auto;
+}
+
+aside[role="complementary"]{
+  background-color: #172635;
+  color: #ffffff;
+  padding: 1.9rem;
+}
+
+aside .container{
+  display:flex;
+  flex-direction:row;
+  gap:40px;
+}
+
+aside .container a:last-of-type{
+  color:#ffffff;
+  display:block;
+  text-align:right;
+  font-size:.8rem;
+  margin-top:10px;
+}
+
+aside footer{
+  display:none;
+}
+
+#colophon{
+  background-color:#3b638b;
+  padding:20px;
+  color:#fff;
+  text-align:center;
+}
+
+#practice h2{
+  color:#3b638b;
+  border-bottom:1px solid #c0c0c0;
+}
+
+
 
 /*-------- responsive imagery ----------*/
+@media screen and (max-width:600px){
+  header.primary nav ul{
+    flex-direction:column;
+    max-width:250px;
+    margin:auto;
+    gap:10px;
+  }
+#content {
+  flex-direction:column;
+}
+#content img{
+  display:block;
+  margin:auto;
+}
 img{
 max-width:100%;
 height:auto;
+}
 }
