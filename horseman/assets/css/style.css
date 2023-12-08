@@ -1,0 +1,39 @@
+/* style sheet for segway project */
+html{
+    box-sizing: border-box;
+}
+
+header.primary{
+background-color: rgb(161, 202, 255);
+padding: 40px;
+text-align: center;
+}
+
+header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:0;
+  }
+
+  header.primary nav ul li{
+    list-style-type:none;
+  }
+
+  header.primary nav ul li a {
+    color:#ffffff;
+    text-decoration:none;
+    background-color:#000000;
+    background-color:rgba(0,0,0,.4);
+    padding:5px 10px;
+    border:1px solid #696969;
+    border-radius:20px;
+    transition:.4s;
+  }
+
+  body{
+    background-color: antiquewhite;
+    font-family: 'Young Serif', serif;
+    background-image:url("");
+    background-repeat:no-repeat;
+}
