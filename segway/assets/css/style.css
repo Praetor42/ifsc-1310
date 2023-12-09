@@ -1,0 +1,75 @@
+/* style sheet for segway project */
+html{
+    box-sizing: border-box;
+    background-image:url("../img/segway_color_logo.gif");
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position-y: 300px;
+    background-position-x: center;
+}
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.container{
+  max-width:80vw;
+  margin:40px auto;
+}
+
+header.primary{
+
+padding: 20px;
+text-align: center;
+}
+
+header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:0;
+  }
+
+  header.primary nav ul li{
+    list-style-type:none;
+  }
+
+  header.primary h1 {
+    font-size:2.4rem;
+    margin:20px 0 0;
+  }
+
+  header.primary nav ul li a {
+    color:#ffffff;
+    text-decoration:none;
+    background-color:#000000;
+    background-color:rgba(0,0,0,.4);
+    padding:5px 10px;
+    border:1px solid #696969;
+    border-radius:20px;
+    transition:.4s;
+  }
+
+  header.primary nav{
+ 
+    max-width:900px;
+    margin:20px auto; 
+   }
+
+   header.primary{
+    border-bottom:5px solid #000000;
+   }
+
+  body{
+    
+    font-family: 'Young Serif', serif;
+    /*background-image:url("../img/segway_color_logo.gif");
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: ;*/
+}
+
+p{
+  text-indent: 50px;
+  line-height: 3;
+  word-spacing: 5px;
+}
