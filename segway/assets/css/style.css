@@ -73,3 +73,10 @@ p{
   line-height: 3;
   word-spacing: 5px;
 }
+
+.img-center{
+  display:block;
+  margin:20px auto;
+  
+  padding:1px;
+}
